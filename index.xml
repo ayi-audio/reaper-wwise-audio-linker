@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Reaper-Wwise Audio Linker" commit="b426046add304e9c3abbd9d380ff182396299571">
-  <category name="src">
+<index version="1" name="Reaper-Wwise Audio Linker" commit="2004f042a0d01142280194dc41021f49df034e94">
+  <category name="Development">
     <reapack name="Reaper-Wwise Audio Linker.lua" type="script" desc="Reaper-Wwise Audio Linker">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
@@ -28,14 +28,14 @@
 ]]></description>
         <link rel="website" href="https://www.audiokinetic.com/library/edge/?source=ReaWwise">Audiokinetic ReaWwise</link>
       </metadata>
-      <version name="1.0.0" author="ayi111" time="2026-01-30T15:20:57Z">
+      <version name="1.0.0" author="ayi111" time="2026-01-30T15:35:18Z">
         <changelog><![CDATA[v1.0.0 (2025-01-30)
 + Initial release
 + Import audio sources from Wwise selection
 + Render selected items back to Wwise original paths
 + P4 (Perforce) integration for checkout before render
 + Progress bar with real-time logging]]></changelog>
-        <source main="main">https://github.com/ayi-audio/reaper-wwise-audio-linker/raw/b426046add304e9c3abbd9d380ff182396299571/src/Reaper-Wwise%20Audio%20Linker.lua</source>
+        <source main="main">https://github.com/ayi-audio/reaper-wwise-audio-linker/raw/2004f042a0d01142280194dc41021f49df034e94/Development/Reaper-Wwise%20Audio%20Linker.lua</source>
       </version>
     </reapack>
   </category>
