@@ -1,23 +1,21 @@
-# ReaPack Repository Template
+# Reaper-Wwise Audio Linker
 
-A template for GitHub-hosted ReaPack repositories with automated
-[reapack-index](https://github.com/cfillion/reapack-index)
-running from GitHub Actions.
+A tool for bidirectional audio workflow between REAPER and Wwise.
 
-Replace the name of the repository in [index.xml](/index.xml) when using this template.
-This will be the name shown in ReaPack.
+## Features
+- Import audio sources from Wwise selected objects into REAPER
+- Render REAPER items back to overwrite Wwise original audio files
+- Automatic P4 checkout before rendering
+- Real-time progress display and logging
 
-```xml
-<index version="1" name="Name of your repository here">
-```
+## Requirements
+- ReaImGui (install via ReaPack: Extensions > ReaImGui)
+- ReaWwise (download from Audiokinetic: https://www.audiokinetic.com/library/edge/?source=ReaWwise)
+- Wwise with WAAPI enabled (default port 8080)
 
-Replace the contents of this file ([README.md](/README.md)).
-This will be the text shown when using ReaPack's "About this repository" feature.
-
-reapack-index looks for package files in subfolders.
-The folder tree represents the package categories shown in ReaPack.
-
-Each package file is expected to begin with a metadata header.
-See [Packaging Documentation](https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation) on reapack-index's wiki.
-
-The URL to import in ReaPack is [https://github.com/`<your username>`/`<repository name>`/raw/master/index.xml](https://github.com/cfillion/reapack-repository-template/raw/master/index.xml).
+## Usage
+1. Open Wwise project with WAAPI enabled
+2. Select objects containing audio sources in Wwise
+3. Click "Import from Wwise" to import audio files
+4. Edit audio in REAPER
+5. Select items and click "Render to Wwise" to overwrite original files
