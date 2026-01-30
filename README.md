@@ -9,8 +9,8 @@ A tool for bidirectional audio workflow between REAPER and Wwise.
 - Real-time progress display and logging
 
 ## Requirements
-- ReaImGui (install via ReaPack: Extensions > ReaImGui)
-- ReaWwise (download from Audiokinetic: https://www.audiokinetic.com/library/edge/?source=ReaWwise)
+- ReaImGui (install via ReaPack > ReaImGui: ReaScript binding for Dear ImGui)
+- ReaWwise (download from Audiokinetic: https://github.com/audiokinetic/ReaWwise?tab=readme-ov-file#userplugins-directory)
 - Wwise with WAAPI enabled (default port 8080)
 
 ## Usage
