@@ -1,54 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Reaper-Wwise Audio Linker" commit="58a3e39ba95bd0f35846aa1f39aa4cb2574295e1">
-  <category name="Example">
-    <reapack name="cfillion_Hello world.lua" type="script" desc="Hello world">
+<index version="1" name="Reaper-Wwise Audio Linker" commit="b426046add304e9c3abbd9d380ff182396299571">
+  <category name="src">
+    <reapack name="Reaper-Wwise Audio Linker.lua" type="script" desc="Reaper-Wwise Audio Linker">
       <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This is an example of a package file. It installs itself as a ReaScript that does nothing but show "Hello World!" in REAPER's scripting console.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Packages may also include additional files specified using the @provides tag.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This text is the documentation shown when using ReaPack's "About this package" feature. {\field{\*\fldinst{HYPERLINK "https://commonmark.org/"}}{\fldrslt{\ul
-Markdown
-}}}
- {\i formatting} is supported.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Reaper-Wwise Audio Linker\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A tool for bidirectional audio workflow between REAPER and Wwise.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Features\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Import audio sources from Wwise selected objects into REAPER\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Render REAPER items back to overwrite Wwise original audio files\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Automatic P4 checkout before rendering\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Real-time progress display and logging\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Requirements\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab ReaImGui (install via ReaPack: Extensions > ReaImGui)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab ReaWwise (download from Audiokinetic: https://www.audiokinetic.com/library/edge/?source=ReaWwise)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Wwise with WAAPI enabled (default port 8080)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Usage\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Open Wwise project with WAAPI enabled\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Select objects containing audio sources in Wwise\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Click "Import from Wwise" to import audio files\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Edit audio in REAPER\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Select items and click "Render to Wwise" to overwrite original files\sa180\par}
 }
 ]]></description>
+        <link rel="website" href="https://www.audiokinetic.com/library/edge/?source=ReaWwise">Audiokinetic ReaWwise</link>
       </metadata>
-      <version name="1.0" author="cfillion" time="2021-01-04T23:30:32Z">
-        <source main="main">https://github.com/cfillion/reapack-repository-template/raw/58a3e39ba95bd0f35846aa1f39aa4cb2574295e1/Example/cfillion_Hello%20world.lua</source>
+      <version name="1.0.0" author="ayi111" time="2026-01-30T15:20:57Z">
+        <changelog><![CDATA[v1.0.0 (2025-01-30)
++ Initial release
++ Import audio sources from Wwise selection
++ Render selected items back to Wwise original paths
++ P4 (Perforce) integration for checkout before render
++ Progress bar with real-time logging]]></changelog>
+        <source main="main">https://github.com/ayi-audio/reaper-wwise-audio-linker/raw/b426046add304e9c3abbd9d380ff182396299571/src/Reaper-Wwise%20Audio%20Linker.lua</source>
       </version>
     </reapack>
   </category>
   <metadata>
-    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaPack Repository Template\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 A template for GitHub-hosted ReaPack repositories with automated {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index"}}{\fldrslt{\ul
-reapack-index
-}}}
- running from GitHub Actions.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the name of the repository in {\field{\*\fldinst{HYPERLINK "/index.xml"}}{\fldrslt{\ul
-index.xml
-}}}
- when using this template. This will be the name shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \f1 <index version="1" name="Name of your repository here">\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the contents of this file ({\field{\*\fldinst{HYPERLINK "/README.md"}}{\fldrslt{\ul
-README.md
-}}}
-). This will be the text shown when using ReaPack's "About this repository" feature.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 reapack-index looks for package files in subfolders. The folder tree represents the package categories shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Each package file is expected to begin with a metadata header. See {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation"}}{\fldrslt{\ul
-Packaging Documentation
-}}}
- on reapack-index's wiki.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 The URL to import in ReaPack is {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-repository-template/raw/master/index.xml"}}{\fldrslt{\ul
-https://github.com/{\f1 <your username>}/{\f1 <repository name>}/raw/master/index.xml
-}}}
-.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Reaper-Wwise Audio Linker\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A tool for bidirectional audio workflow between REAPER and Wwise.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Features\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Import audio sources from Wwise selected objects into REAPER\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Render REAPER items back to overwrite Wwise original audio files\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Automatic P4 checkout before rendering\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Real-time progress display and logging\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Requirements\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab ReaImGui (install via ReaPack > ReaImGui: ReaScript binding for Dear ImGui)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab ReaWwise (download from Audiokinetic: https://github.com/audiokinetic/ReaWwise?tab=readme-ov-file#userplugins-directory)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Wwise with WAAPI enabled (default port 8080)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Usage\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Open Wwise project with WAAPI enabled\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Select objects containing audio sources in Wwise\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Click "Import from Wwise" to import audio files\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Edit audio in REAPER\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Select items and click "Render to Wwise" to overwrite original files\sa180\par}
 }
 ]]></description>
   </metadata>
